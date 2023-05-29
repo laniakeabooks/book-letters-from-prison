@@ -6,9 +6,11 @@ TeX sources for the book _Letters from Prison_.
 
 ## Build
 
-Install the [tectonic](https://github.com/tectonic-typesetting/tectonic) XeTeX distribution.
+1. Install the [tectonic](https://github.com/tectonic-typesetting/tectonic) XeTeX distribution.
 
-```
+2. Run:
+
+```sh
 make pdf
 ```
 
