@@ -1,0 +1,141 @@
+\documentclass{book}
+
+% packages
+\usepackage{geometry} % for customizing page layout
+\usepackage{fancyhdr} % for customizing header/footer
+\usepackage{titlesec} % for customizing section titles
+\usepackage{fontspec}
+\usepackage[pdfborder={0 0 0}]{hyperref} % for clickable toc
+
+% page layout
+\geometry{
+    paperwidth=132mm,
+    paperheight=197mm,
+    margin=2cm,
+    top=1cm,
+    bottom=1cm,
+    headheight=14pt,
+    includeheadfoot
+}
+
+% line spacing
+\linespread{1.2}
+
+% allow footnotes to span multiple pages
+\interfootnotelinepenalty=-10000
+
+% pdf metadata
+\hypersetup{
+    pdftitle={Letters from Prison},
+    pdfauthor={Theodore Keloglou}
+}
+
+% section titles
+\pagestyle{fancy}
+
+% page header and footer
+\fancypagestyle{plain}{
+    \fancyhf{} % clear all header and footer fields
+    \renewcommand{\headrulewidth}{0pt} % remove the header rule
+    \renewcommand{\footrulewidth}{0pt} % remove the footer rule
+}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[LE,RO]{\thepage} % page number on the left for even pages and on the right for odd pages
+\fancyhead[RE]{\nouppercase\leftmark} % chapter title on the right for even pages
+\fancyhead[LO]{\nouppercase\rightmark} % section title on the left for odd pages
+
+\titleformat{\chapter}[display]
+    {\normalfont\bfseries\filcenter}
+    {\chaptertitlename\ \thechapter}
+    {14pt}
+    {\Large}
+\titleformat{\section}
+    {\newpage\normalfont\bfseries}
+    {\thesection}
+    {1em}
+    {}
+\titleformat{\subsection}
+    {\normalfont\small\bfseries}
+    {}
+    {0em}
+    {}
+\renewcommand{\chaptername}{Part}
+
+% title page
+\title{Letters from Prison}
+\author{Theodore Keloglou}
+\date{}
+
+% set table of contents depth to only show chapters and sections, not subsections
+\setcounter{tocdepth}{1}
+
+% redfine table of contents with text-center and shorter top-bottom margins
+\makeatletter
+\renewcommand\tableofcontents{
+    \if@twocolumn
+        \@restonecoltrue\onecolumn
+    \else
+        \@restonecolfalse
+    \fi
+    \chapter*{\vspace{-4.5ex}\centering\contentsname\vspace{-1.5ex}
+        \@mkboth{%
+           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \@starttoc{toc}%
+    \if@restonecol\twocolumn\fi
+    }
+\makeatother
+
+% begin
+\begin{document}
+
+\frontmatter % for title page, table of contents, etc.
+\pagestyle{empty} % set the page style to empty for the front matter pages
+
+\maketitle
+
+% copyright page
+\vspace*{\fill}
+\begin{center}
+{
+    \small
+    Published by Laniakea Books in 2023.\\
+    \vspace{1em}
+    First Printing. 50 copies. £282.50.\\
+    \vspace{1em}
+    Full digital copies available at:\\
+    https://laniakeabooks.org/books/letters-from-prison/\\
+    \vspace{1em}
+    No Rights Reserved.\\
+    \vspace{1em}
+    The entirety of this book is dedicated to the public domain.\\
+    \vspace{1em}
+    To the extent possible under law, Theodore Keloglou has waived all copyright and related or neighbouring rights to \textit{Letters~From~Prison}.\\
+    \vspace{1em}
+    All parts of this book may be reproduced and transmitted in all forms and by all means, electronic or mechanical, including photocopying and recording, and in all information storages and retrieval systems without any prior or subsequent written or oral permission of the author.\\
+    \vspace{1em}
+    Laniakea Books\\
+    Haggerston, London\\
+    https://laniakeabooks.org/\\
+    \vspace{1em}
+    ISBN 978-0-00-00000-0\\
+    \vspace{1em}
+    No artificial neural networks were used to generate any part of the text content of this book.\\
+    \vspace{1em}
+    Cover design by Dimitris Louzikiotis.\\
+    Typeset in \TeX\ using Tectonic.\\
+    Printed and bound by The Printing Centre in Bloomsbury, London.
+}
+\end{center}
+
+% dedication page
+\clearpage % start the dedication page on a new page
+\vspace*{\fill} % center the content vertically
+\begin{center}
+    \emph{To my intentional and unintentional jailers—without whom I would never have written any of this.}
+\end{center}
+\vspace*{\fill}
+
+\tableofcontents
+
+\mainmatter % for main content
+\pagestyle{fancy} % switch back to the fancy page style for the main content pages
