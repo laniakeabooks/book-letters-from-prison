@@ -1,8 +1,16 @@
 # Letters from Prison
 
-Latex sources for the book _Letters from Prison_.
+TeX sources for the book _Letters from Prison_.
 
 [laniakeabooks.org/books/letters-from-prison/](https://laniakeabooks.org/books/letters-from-prison/)
+
+## Build
+
+Install the [tectonic](https://github.com/tectonic-typesetting/tectonic) XeTeX distribution.
+
+```
+make pdf
+```
 
 ## License
 
