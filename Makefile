@@ -1,3 +1,3 @@
 pdf:
 	tectonic -X build
-	cp ./build/book/book.pdf book.pdf
+	cp ./build/book/book.pdf letter-from-prison-book.pdf
