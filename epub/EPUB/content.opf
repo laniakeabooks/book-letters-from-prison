@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package version="3.0" xml:lang="en" xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-id">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="pub-id">urn:uuid:D70B25FA-59E1-4307-B816-592EEB45A725</dc:identifier>
+    <dc:language>en</dc:language>
+    <dc:title>Letters from Prison</dc:title>
+    <dc:creator id="creator">Theodore Keloglou</dc:creator>
+    <dc:publisher>Laniakea Books</dc:publisher>
+    <dc:date>2023-06-12</dc:date>
+    <dc:rights>CC0</dc:rights>
+    <dc:identifier id="isbn13">urn:isbn:9781739450007</dc:identifier>
+    <meta property="dcterms:modified">2023-06-12T00:00:01Z</meta>
+  </metadata>
+  <manifest>
+    <item id="cover" href="images/cover.png" media-type="image/png"/>
+    <item id="titlepage" href="text/titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="nav" href="text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="part-1" href="text/part-1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="interlude-i" href="text/interlude-i.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part-2" href="text/part-2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="interlude-ii" href="text/interlude-ii.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part-3" href="text/part-3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="interlude-iii" href="text/interlude-iii.xhtml" media-type="application/xhtml+xml"/>
+    <item id="part-4" href="text/part-4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="notes" href="text/notes.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine>
+    <itemref idref="titlepage"/>
+    <itemref idref="nav"/>
+    <itemref idref="part-1"/>
+    <itemref idref="interlude-i"/>
+    <itemref idref="part-2"/>
+    <itemref idref="interlude-ii"/>
+    <itemref idref="part-3"/>
+    <itemref idref="interlude-iii"/>
+    <itemref idref="part-4"/>
+    <itemref idref="notes"/>
+  </spine>
+</package>
