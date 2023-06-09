@@ -14,6 +14,11 @@ TeX sources for the book _Letters from Prison_.
 make pdf
 ```
 
+```sh
+make epub
+make lint
+```
+
 ## License
 
 MIT for the code. CC0 for the content.
