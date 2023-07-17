@@ -3,15 +3,15 @@ all: pdf epub
 
 .PHONY: pdf
 pdf:
-	rm -f ./dist/letter-from-prison.pdf
+	rm -f ./dist/letters-from-prison.pdf
 	cd tex && tectonic -X build
-	cp ./tex/build/book/book.pdf ./dist/letter-from-prison.pdf
+	cp ./tex/build/book/book.pdf ./dist/letters-from-prison.pdf
 
 .PHONY: epub
 epub:
-	rm -f ./dist/letter-from-prison.epub
-	cd epub && zip -X  -r ../dist/letter-from-prison.epub mimetype META-INF EPUB -x "*.DS_Store"
+	rm -f ./dist/letters-from-prison.epub
+	cd epub && zip -X  -r ../dist/letters-from-prison.epub mimetype META-INF EPUB -x "*.DS_Store"
 
 .PHONY: lint
 lint:
-	epubcheck ./dist/letter-from-prison.epub
+	epubcheck ./dist/letters-from-prison.epub
