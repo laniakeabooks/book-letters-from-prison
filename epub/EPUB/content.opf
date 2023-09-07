@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package version="3.0" xml:lang="en" xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-id">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="pub-id">urn:uuid:D70B25FA-59E1-4307-B816-592EEB45A725</dc:identifier>
+    <dc:identifier id="pub-id">urn:uuid:1E1183C4-2379-4F22-8CA0-B0E8AC375E09</dc:identifier>
     <dc:language>en</dc:language>
     <dc:title>Letters from Prison</dc:title>
     <dc:creator id="creator">Theodore Keloglou</dc:creator>
@@ -9,7 +9,7 @@
     <dc:date>2023-06-12</dc:date>
     <dc:rights>CC0</dc:rights>
     <dc:identifier id="isbn13">urn:isbn:9781739450007</dc:identifier>
-    <meta property="dcterms:modified">2023-06-12T00:00:01Z</meta>
+    <meta property="dcterms:modified">2023-09-07T00:00:01Z</meta>
   </metadata>
   <manifest>
     <item id="cover" href="image/cover.png" media-type="image/png"/>
